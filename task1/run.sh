@@ -3,6 +3,8 @@ dr=$1
 ext=$2
 fld=$3
 arc=$4
+cd
+cd $dr
 mkdir $dr/$fld
 find $dr -name "*.$ext" -exec cp {} $dr/$fld \;
 cd
