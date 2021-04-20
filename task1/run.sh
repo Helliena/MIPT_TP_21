@@ -7,6 +7,7 @@ mkdir $fld
 find $dr -name "*.$ext" -exec cp {} $fld \;
 for file in $fld/*
 do 
- tar -rf $arc.tar.gz $file
+ tar -rf $arc.tar $file
 done 
+gzip $arc.tar
 echo "done"
