@@ -3,11 +3,7 @@ dr=$1
 ext=$2
 fld=$3
 arc=$4
-cd
-cd $dr
 mkdir $fld
-find $dr -name "*.$ext" -exec cp {} $dr/$fld \;
-cd
-cd $dr
+find $dr -name "*.$ext" -exec cp {} $fld \;
 tar -czf $arc.tar.gz $fld
 echo "done"
