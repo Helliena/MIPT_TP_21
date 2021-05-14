@@ -1,0 +1,6 @@
+f = open('index.h', 'w')
+f.write("#include<iostream>" + '\n')
+f.write('\n')
+f.write("char setA(){" + '\n')
+f.write("  return '0';" + '\n')
+f.write("}" + '\n')
