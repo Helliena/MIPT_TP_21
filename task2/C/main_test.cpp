@@ -7,7 +7,7 @@ TEST(testA, returnZero) {
 }
 
 TEST(testB, returnOne) {
-    EXPECT_EQ(setB(), 1);
+    EXPECT_EQ(setB(), '1');
 }
 
 int main(int argc, char** argv) {
